@@ -4,7 +4,6 @@ import { Home } from "../pages/Home";
 import { About } from "../pages/About";
 import { Contact } from "../pages/Contact";
 import { FAQ } from "../pages/FAQ ";
-
 import { Products } from "../pages/Products";
 import { Logout } from "../pages/Logout";
 import { Login } from "../pages/Login";
@@ -12,6 +11,8 @@ import { Belts } from "../pages/Belts";
 import { Wallets } from "../pages/Wallets";
 import { Bags } from "../pages/Bags";
 import { Accessories } from "../pages/Accessories";
+import { Footer } from "../pages/Footer.jsx";
+import { Cart } from "../pages/Cart";
 export const MainRoutes = () => {
   return (
     <>
@@ -30,7 +31,9 @@ export const MainRoutes = () => {
         </Route>
         <Route path="/logout" element={<Logout />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
+      <Footer />
     </>
   );
 };

@@ -1,13 +1,13 @@
 import React from "react";
 import { SubNav } from "./Products";
 
-export const Contact = () => {
+export const Cart = () => {
   return (
     <>
       <SubNav>
         <p> FREE US Shipping $199+ | Easy Returns | Worth Holding Onto</p>
       </SubNav>
-      <h1>Contact us</h1>
+      <h1>Cart</h1>
     </>
   );
 };
