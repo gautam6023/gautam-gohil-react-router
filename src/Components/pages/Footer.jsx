@@ -1,6 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+
 const FooterCon = styled.footer`
   height: auto;
   width: 100%;
@@ -9,8 +17,7 @@ const FooterCon = styled.footer`
   align-items: center;
   background-color: #f5f5f5;
   color: #222222;
-  position: absolute;
-  bottom: 0;
+  gap: 50px;
 
   .lists {
     display: flex;
@@ -22,6 +29,13 @@ const FooterCon = styled.footer`
       text-align: left;
       line-height: 35px;
     }
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 30px;
   }
 `;
 
@@ -84,11 +98,14 @@ export const Footer = () => {
           <li>Final Sale</li>
         </ul>
       </div>
-      <div>
-        <img
-          src={process.env.PUBLIC_URL + "/public/Images/payments.png"}
-          alt=""
-        />
+      <div className="footer_second">
+        <h3>Follow us on</h3>
+        <div className="icons">
+          <FontAwesomeIcon icon={faInstagram} />
+          <FontAwesomeIcon icon={faFacebook} />
+          <FontAwesomeIcon icon={faLinkedin} />
+          <FontAwesomeIcon icon={faYoutube} />
+        </div>
       </div>
     </FooterCon>
   );

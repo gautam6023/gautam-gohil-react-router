@@ -7,6 +7,7 @@ import {
   faUser,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
+import { SubNav } from "./Products";
 
 const Nav = styled.div`
   height: 100px;
@@ -69,6 +70,20 @@ export const Navbar = () => {
           </Link>
         </div>
       </Nav>
+      <SubNav>
+        <Link className="links" to={"belts"}>
+          Belts
+        </Link>
+        <Link className="links" to={"bags"}>
+          Bags
+        </Link>
+        <Link className="links" to={"wallets"}>
+          Wallets
+        </Link>
+        <Link className="links" to={"accessories"}>
+          Accessories
+        </Link>
+      </SubNav>
     </>
   );
 };

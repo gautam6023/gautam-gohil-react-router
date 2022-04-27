@@ -28,20 +28,7 @@ export const SubNav = styled.div`
 export const Products = () => {
   return (
     <>
-      <SubNav>
-        <Link className="links" to={"belts"}>
-          Belts
-        </Link>
-        <Link className="links" to={"bags"}>
-          Bags
-        </Link>
-        <Link className="links" to={"wallets"}>
-          Wallets
-        </Link>
-        <Link className="links" to={"accessories"}>
-          Accessories
-        </Link>
-      </SubNav>
+      <p>Products</p>
     </>
   );
 };

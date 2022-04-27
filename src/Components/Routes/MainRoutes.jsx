@@ -13,10 +13,12 @@ import { Bags } from "../pages/Bags";
 import { Accessories } from "../pages/Accessories";
 import { Footer } from "../pages/Footer.jsx";
 import { Cart } from "../pages/Cart";
+import { Banner } from "../pages/Banner";
 export const MainRoutes = () => {
   return (
     <>
       <Navbar />
+      <Banner />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
